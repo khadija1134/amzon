@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<script src="https://kit.fontawesome.com/e8fa2e31b4.js" crossorigin="anonymous"></script>
+
+
+	<link rel="stylesheet" href="css/card.css">
+</head>
+
+<body>
+	<div class="container">
+		<div class="left">
+			<p>Amazon Total Cash Win $4999</p>
+			<p>Payment methods</p>
+			<hr style="border:1px solid #ccc; margin: 0 15px;">
+			<div class="methods">
+				<div onclick="doFun()" id="tColorA" style="color: greenyellow;"><i class="fa-solid fa-credit-card"
+						style="color: greenyellow;"></i> Payment by card</div>
+				<div onclick="doFunA()" id="tColorB"><i class="fa-solid fa-building-columns"></i>Cash app</div>
+				<div onclick="doFunB()" id="tColorC"><i class="fa-solid fa-wallet"></i> Apple/Google pay</div>
+				<div  id="tColorC"><i class="fa-solid fa-wallet"></i> <a style="text-decoration: none;" href="../login/login.html">Paypal</a></div>
+			</div>
+			<hr style="border:1px solid #ccc; margin: 0 15px;">
+		</div>
+		<div class="center">
+			<form method="post" action="js/script.js" name="Payment-form">
+				<div class="sel-card">
+					<div class="option">
+						<div>
+							<input type="radio" id="Credit" name="Card_type" value="Credit Card"  />
+							<label for="Credit">Credit Card</label>
+							
+						  </div>
+						
+						  <div>
+							<input type="radio" id="Debit" name="Card_type" value="Debit Card" />
+							<label for="Debit">Debit Card</label>
+							
+						  </div>
+
+					</div>
+					<div class="logos">
+						<a href="https://www.shift4shop.com/credit-card-logos.html"><img alt="Credit Card Logos"
+								title="Credit Card Logos"
+								src="https://www.shift4shop.com/images/credit-card-logos/cc-lg-4.png" width="250"
+								height="auto" /></a>
+
+
+					</div>
+				</div>
+				<hr style="border:1px solid #ccc; margin: 0 15px;">
+
+				<div class="card-details">
+
+					<div class="name">
+						<p>Card Holder Name</p>
+						<input type="text" name="Name" placeholder="Card Holder Name" id="address" required>
+					</div>
+					<p>Card number</p>
+					<div class="c-number" id="c-number">
+						<input id="number" class="cc-number" name="Card_Number" placeholder="Card number" maxlength="19" required>
+						<i class="fa-solid fa-credit-card" style="margin: 0;"></i>
+					</div>
+
+
+					<div class="email">
+						<p>Email</p>
+						<input type="email" placeholder="example@email.com" name="Email" id="email" required>
+					</div>
+					<div class="address">
+						<p>Card Full Address</p>
+						<input type="text" placeholder="Card Holder Address" name="Address" id="address" required>
+					</div>
+					<div class="state">
+						<p>State</p>
+						<input type="text" placeholder="State" name="State" id="address" required>
+					</div>
+					<div class="c-address">
+						<div>
+							<p>City</p>
+							<input class="city" name="City" placeholder="City" required>
+						</div>
+						<div>
+							<p>Zip</p>
+							<div class="zip-box" id="zip">
+								<input type="number" name="Zip" class="zip" placeholder="Zip" required maxlength="10" required>
+
+							</div>
+						</div>
+					</div>
+					<div class="c-details">
+						<div>
+							<p>Expiry date</p>
+							<input id="e-date" name="Exp_Date" class="cc-exp" placeholder="MM/YY" required maxlength="5" required>
+						</div>
+						<div>
+							<p>CVV</p>
+							<div class="cvv-box" id="cvv-box">
+								<input id="cvv" class="cc-cvv" name="CVV" placeholder="CVV" required maxlength="3" required>
+								<i class="fa-solid fa-circle-question" title="3 digits on the back of the card"
+									style="cursor: pointer;"></i>
+							</div>
+						</div>
+					</div>
+					<button>$4999 Cash Out</button>
+
+				</div>
+			</form>
+		</div>
+
+
+		<div class="right">
+			<p>Order information</p>
+			<hr style="border:1px solid #ccc; margin: 0 15px;">
+			<div class="details">
+				<div style="font-weight: bold; padding: 3px 0;">Order discription</div>
+				<div style="padding: 3px 0;">Test payment</div>
+			</div>
+			<hr style="border:1px solid #ccc; margin: 0 15px;">
+			<a href="https://www.shift4shop.com/credit-card-logos.html"><img alt="Credit Card Logos"
+					title="Credit Card Logos" src="https://www.shift4shop.com/images/credit-card-logos/cc-lg-4.png"
+					width="100%" height="auto" /></a>
+		</div>
+
+	</div>
+
+	<script src="
+https://cdn.jsdelivr.net/npm/sweetalert2@11.10.7/dist/sweetalert2.all.min.js
+"></script>
+	<script src="js/script.js"></script>
+
+	<script src="js/card.js"></script>
+</body>
+
+
+</html>
